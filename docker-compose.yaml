@@ -1,0 +1,17 @@
+version: "3.0"
+services:
+  brxm-blog-migrator:
+    build: .
+    volumes:
+      - ./src:/scripts
+      - ./blog_post_archive:/input
+      - ./brxm-blog-post-output:/output
+    environment:
+      INPUT_BLOG_POST_COPY_LINK_BASE_URL: https://kfh.libraryservices.nhs.uk
+      INPUT_BRXM_EXISTING_BLOG_CATEGORIES_JSON: '{
+        "discovery_system": "Discovery System",
+        "inter_library_loans": "Inter Library Loans",
+        "data_search": "Data Search",
+        "document_supply": "Document Supply"
+      }'
+      DEBUG: 'False'

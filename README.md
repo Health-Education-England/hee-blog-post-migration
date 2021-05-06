@@ -39,4 +39,5 @@ Make sure to update the following volumes and environment variables before runni
 - Login to the brXM console (`/cms/console`) of the environment wherein the blog posts needs to be imported (with `xm.console.user` privilege).
 - Import `brxm-archived-blog-categories.yaml` under `/content/documents/administration/valuelists/kls` node in order to import the blog categories.
 - Import `brxm-archived-blog-posts.yaml` under `/content/documents/lks` node in order to import blog posts under `Archived Blog Posts` folder.
+- Login to brXM CMS (`/cms`) of the environment wherein the blog posts have been imported (with privilege to edit documents of `hee:blogPost` type) and publish all migrated blog post documents by choosing `Publish all in folder...` on `Archived Blog Posts` folder.
 - Finally, share `blog-posts-notes.txt` file with HEE Editors to action on post migration steps (if required).
